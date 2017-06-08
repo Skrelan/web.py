@@ -40,7 +40,7 @@ class Index:
 
 class Test:
 	def GET(self,name=''):
-		return 'no'
+		return json.dumps({'message':'yes, I work'})
 
 	def POST(self):
 		data = json.loads(web.data())
